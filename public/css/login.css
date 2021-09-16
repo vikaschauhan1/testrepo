@@ -1,0 +1,114 @@
+body{color:#ccc;}
+a {
+    color: #333;
+}
+.loginbg{
+	background: url('../images/loginbg.jpg')repeat;
+	width:100%;
+	height:100%;
+	height: 100vh;
+	background-size: 100%;
+}
+#loginbox{
+	  /* background: rgb(255, 255, 255); */
+	  /* height: 100vh; */
+	  position: relative;
+	  z-index: 999;
+}
+.backdrop{background: rgba(212, 222, 236, 0.43);width:100%;height:100vh;position:absolute;top: 0px;}
+.btn-primary {
+    color: #ffffff;
+    background-color: #005eb7;
+    border-color: #0254a2;
+    text-transform: uppercase;
+}
+.btn-primary:focus, .btn-primary:active, .btn-primary:visited , .primary:active:focus{
+    color: #ffffff;
+    background-color: #005eb7;
+    border-color: #0254a2;
+    text-transform: uppercase;
+}
+.ccheck {
+    display: inline-block;
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right:8px;
+    color: #333;
+}
+
+/* Hide the browser's default checkbox */
+.ccheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.ccheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #8e8a8a;
+}
+
+/* On mouse-over, add a grey background color */
+.ccheck:hover input ~ .ccheckmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.ccheck input:checked ~ .ccheckmark {
+    background-color: #ffffff;
+    border: 1px solid #444;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.ccheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.ccheck input:checked ~ .ccheckmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.ccheck .ccheckmark:after {
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid #444;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* used for global checkbox */
+.userimg{width: 100px;height: 100px;border:2px solid #ccc;padding:3px;margin: 28px auto -55px auto;overflow:hidden;border-radius:50%;text-align: center;float: none;}
+.userimg img{width: 98px;height: 98px;border-radius: 50%;margin: -4px;}
+
+*{outline:0 !important;}
+.logintrans{background: rgb(255, 255, 255);border-radius:6px;padding: 71px 14px 14px 14px;box-shadow: 0px 1px 10px #333;}
+
+#site-landing {
+       
+        height: 100%;
+        width: 100%;
+        1background-image: linear-gradient(to top, #26aae1 0%, #330867 100%);
+    }
+	
+	
